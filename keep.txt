@@ -1,0 +1,7 @@
+ python3 manage.py runserver
+ python3 manage.py makemigrations   // making migrations
+ python3 manage.py migrate  // commit migrations
+ python3 manage.py migrate store 003 // roleback to preview migration
+ python3 manage.py startapp  store_custom  // creating apps
+  python3 manage.py createsuperuser   // create admin user
+  https://www.django-rest-framework.org/topics/documenting-your-api/
