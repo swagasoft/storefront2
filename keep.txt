@@ -4,4 +4,9 @@
  python3 manage.py migrate store 003 // roleback to preview migration
  python3 manage.py startapp  store_custom  // creating apps
   python3 manage.py createsuperuser   // create admin user
+  pip3  install drf-nested-routers  // use pip3 for installation if pipenv is not working
   https://www.django-rest-framework.org/topics/documenting-your-api/
+
+SELECT setval('store_cartitem_id_seq', (SELECT MAX(id) FROM store_cartitem)+1);  # solve duplicate id problem
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY1OTMwMDY5LCJqdGkiOiJiY2IyODJiZTY0Njk0MTZkYmM1YjUyZDM2NzExYThlZCIsInVzZXJfaWQiOjR9.aLRCAzBFydcA-i7f_7UrBfAzUZZy841iWMt9xcG_DW0
